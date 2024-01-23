@@ -1,6 +1,6 @@
 def getInputInfos():
-    text = """
-    Digite o %s do Contato: """
+
+    text = """        Digite o %s do Contato: """
 
     name  = input(text % ("nome"))
     phone = input(text % ("phone"))
@@ -22,7 +22,7 @@ def getContactIndex(contacts):
 
 def adicionar(contacts, contato):
     contacts.append(contato)
-    print("""\n\nContato adicionado com sucesso!\n\n""")
+    print("""          Contato adicionado com sucesso!     """)
     return
 
 def visualizar(contacts, onlyFavs = False):
@@ -108,11 +108,11 @@ while True:
     except NotImplementedError as e:
         print("Opção não implementada: ", e)
     except ValueError as e:
-        print("Opção desconhecida, verifique o que foi digitado: ", opt)
+        print("Opção desconhecida, verifique o que foi digitado: ", e)
     except Exception as e:
         print(e)
     else:
-        print("Operação realizada")
+        print("""       Operação realizada      """)
     finally:
-        print("############")
-print("Programa finalizado!")
+        print("""       ####################################        """)
+print("""       Programa finalizado!        """)
